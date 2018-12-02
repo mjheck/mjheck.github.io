@@ -37,7 +37,8 @@ nav{
 	width:100%;
 }
 
-nav ul li a{
+nav ul li a,
+nav ul li a:visited{
     color:#f7f7f5;
 }
 
