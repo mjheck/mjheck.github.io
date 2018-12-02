@@ -24,7 +24,6 @@ body{
     background-color: #07080b;
     color:#f7f7f5;
     font-family: 'Titillium Web', sans-serif;
-    max-width: 1440px;
     margin:0 auto;
 }
 
@@ -35,6 +34,7 @@ ul{
 /*Navigateur*/
 nav{
     background:#932d86;
+	width:100%;
 }
 
 nav ul li a{
@@ -44,6 +44,10 @@ nav ul li a{
 nav ul li a:hover{
     background:linear-gradient(rgba(26,60,144,0.2), rgba(26,60,144,1));
     color:#f7f7f5;
+}
+
+input[type=search]{
+	border:none;
 }
 
 /*Hyperliens général*/
@@ -136,12 +140,14 @@ footer ul li{
 
 /****************Style desktop et tablette******************/
 
-@media only screen and (min-width:481px){
+@media only screen and (min-width:675px){
 	
 	
     header,main,.spotlight,footer{
         margin-left:18px;
         margin-right:18px;
+		margin:auto;
+		max-width:1440px;
     }
 	
 	/*navigateur*/
@@ -149,6 +155,8 @@ footer ul li{
 		display:flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+		max-width:1440px;
+		margin:0 auto;
 	}
 	
 	nav ul li a{
@@ -207,7 +215,7 @@ footer ul li{
 
 }
 /****************Style mobile******************/
-@media only screen and (max-width:480px){
+@media only screen and (max-width:674px){
 	body{
 		display:flex;
 		flex-direction:column;
@@ -231,7 +239,7 @@ footer ul li{
 	}
 	/*Navigateur*/
 	nav{
-		order:1;
+		order:4;
 		width:100%;
 		margin-top:10%;
 	}
@@ -258,7 +266,7 @@ footer ul li{
 	
 	/*Footer*/
 	footer{
-		order:2;
+		order:5;
 		width:100%;
 		padding-top:10px;
 	}
