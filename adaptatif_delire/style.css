@@ -17,7 +17,7 @@ blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, vi
 /****************Général**************/
 @font-face {
     font-family: imagine;
-    src: url(_fonts/imagine_font.otf);
+    src: url(fonts/imagine_font.otf);
 }
 
 body{
