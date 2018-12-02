@@ -1,0 +1,269 @@
+﻿/*
+Cours Création de sites web 1
+TP2: site flexbox
+Marie-Josée Heck - 26 novembre 2017
+Page: style.css
+*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, 
+blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;}
+
+/****************Général**************/
+@font-face {
+    font-family: imagine;
+    src: url(_fonts/imagine_font.otf);
+}
+
+body{
+    background-color: #07080b;
+    color:#f7f7f5;
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*Navigateur*/
+nav{
+    background:#932d86;
+}
+
+nav ul li a{
+    color:#f7f7f5;
+}
+
+nav ul li a:hover{
+    background:linear-gradient(rgba(26,60,144,0.2), rgba(26,60,144,1));
+    color:#f7f7f5;
+}
+
+/*Hyperliens général*/
+a{
+    color:#07ABD1;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#07ABD1;
+}
+
+a:hover{
+    color:#FCD741;
+}
+
+/*En-tete*/
+header h1{
+	font-family:imagine;
+    font-size: 2.2em;
+    color:#FCD741;
+}
+
+/*Main*/
+aside h3{
+    font-size: 1.5em;
+    margin-top:15px;
+}
+
+.vedette img{
+    width:100%;
+    height:auto;
+}
+
+/*Changement de l'image dans article du main*/
+article{
+    margin-top:15px;
+	position:relative;
+}
+
+.introCache{
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+	opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.introCache:hover{
+  opacity: 1;
+}
+
+/*Section*/
+article h2{
+    padding: 1%;
+    font-size:1.2em;
+    color:#FCD741;
+} 
+
+article h3{
+    font-size: 1.2em;
+}
+
+.img-wrap img{
+    margin-top:10px;
+    margin-bottom:10px;
+    width:100%;
+    box-shadow: 0px 0px 20px 1px #FCD741;
+}
+
+/*Footer*/
+footer{
+    color:#f7f7f5;
+    text-align:center;
+    margin-top:6%;
+}
+
+footer ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+footer ul li{
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom:10px;
+}
+
+/****************Style desktop et tablette******************/
+
+@media only screen and (min-width:481px){
+	
+	
+    header,main,.spotlight,footer{
+        margin-left:18px;
+        margin-right:18px;
+    }
+	
+	/*navigateur*/
+	nav ul{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	
+	nav ul li a{
+		display:block;
+		padding:15px;
+	}
+
+	.search-form{
+		display:flex;
+		justify-content:flex-end;
+		flex:1 0 auto;
+		align-self:center;
+        margin-right: 10px;
+	}
+
+	/*header*/
+	header{
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+        padding-top:10px;
+        padding-bottom:10px;
+	}
+
+	header img{
+		width: 10%;
+		height: auto;
+		min-width: 100px;
+	}
+
+	/*Main*/
+	.vedette{
+		display:flex;
+		flex-direction:row-reverse;
+	}
+
+	/*Section*/
+	.spotlight{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+
+	.recent{
+		width:30%;
+	}
+	
+	/*footer*/
+	footer{
+		padding:15px;
+	}
+    
+    footer ul li img{
+    width:42px;
+	}
+
+}
+/****************Style mobile******************/
+@media only screen and (max-width:480px){
+	body{
+		display:flex;
+		flex-direction:column;
+        align-items: center;
+		margin-top:10px;
+	}
+	
+	header,main,.spotlight,footer{
+		margin-left:10px;
+		margin-right:10px;
+	}
+	
+    header{
+       display:flex;
+       flex-direction:column;
+       align-items: center;
+    }
+    
+	header h1{
+		margin-top:20px;
+	}
+	/*Navigateur*/
+	nav{
+		order:1;
+		width:100%;
+		margin-top:10%;
+	}
+	
+	nav ul{
+		display:flex;
+		flex-direction:column;
+		
+	}
+	
+	nav ul li a{
+		display:flex;
+		padding:10px;
+		justify-content:center;
+		border-top:0.8px solid #74246a;
+	}
+	
+	.search-form{
+		order:-1;
+		text-align:center;
+        padding-top: 10px;
+		padding-bottom:10px;
+	}
+	
+	/*Footer*/
+	footer{
+		order:2;
+		width:100%;
+		padding-top:10px;
+	}
+    
+    footer ul li img{
+        width:30px;
+	}
+}
