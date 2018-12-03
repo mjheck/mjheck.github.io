@@ -87,6 +87,11 @@ aside h3{
 article{
     margin-top:15px;
 	position:relative;
+	padding:0 10px;
+}
+
+aside{
+	padding-left:10px;
 }
 
 .introCache{
