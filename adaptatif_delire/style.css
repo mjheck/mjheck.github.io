@@ -94,6 +94,10 @@ aside{
 	padding-left:10px;
 }
 
+.conteneur-img{
+	position:relative;
+}
+
 .introCache{
     position:absolute;
     top:0;
