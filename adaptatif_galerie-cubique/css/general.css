@@ -60,7 +60,7 @@ nav input[type=button]{
 }
 
 nav input[type=button]:hover{
-    color: #d6b0bb;
+    cursor:pointer;
 }
 
 h2{
@@ -397,7 +397,7 @@ h2{
     }
     
     .connecteMobile input[type=button]:hover{
-        box-shadow: 2px 2px 5px #d6b0bb;
+        cursor:pointer;
     }
 	
     /*Grande image*/

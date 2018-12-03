@@ -92,7 +92,7 @@ Page: galerie.css
 }
 
 .ajouter input[type=button]:hover{
-    color: #d6b0bb;
+    cursor:pointer;
 }
 
 .boutonCommander {
