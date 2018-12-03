@@ -1,0 +1,129 @@
+/**
+ * TP1 - Exercice2
+ * Cours : Programmation interactive client-serveur
+ * Par : Marie-Josée Heck
+ * Date : 13 juin 2018
+ */
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(26, 26, 26);
+}
+
+h1{
+    font-family: 'Faster One', cursive;
+    text-align: center;
+}
+
+p{
+	text-align:center;
+	font-style:italic;
+}
+#conteneur{
+   margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.boxCompteur{
+    border-style: ridge;
+    border-radius:5px;
+    font-family: 'Orbitron', sans-serif;
+    font-size:16pt;
+    order:0;
+    background-color: rgb(26, 26, 26);;
+    color:white;
+    margin-bottom:10px;
+    min-width:30px;
+    text-align: center;
+    padding:2px 10px 2px 10px;
+}
+
+.btnReessayer{
+    order:2;
+    font-size:14pt;
+    margin-top:15px;
+    margin-bottom:20px;
+    padding:10px 10px 10px 10px;
+    background-color: rgb(26, 26, 26);
+    color:white;
+    box-shadow:8px 8px 8px gray;
+}
+
+.btnReessayer:hover{
+    cursor: pointer;
+}
+
+.btnReessayer:active{
+    box-shadow: none;
+}
+
+.jeu{
+    order:1;
+    border:20px solid;
+    border-radius:10px;
+    background-color: gray;
+}
+
+.jeu td{
+    color:red;
+    font-weight: bolder;
+    font-size:20pt;
+    border:none;
+    width:60px;
+    height:60px;
+    border-radius:4px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.avecValeur{
+    border:0.6px solid rgb(203, 217, 228);
+    background:linear-gradient(to bottom right, rgb(203, 217, 228), rgb(231, 231, 231));
+    box-shadow: 2px 2px 0px rgb(250, 250, 250);
+}
+
+.sansValeur{
+    background-color: none;
+}
+
+.records{
+    background-color: rgb(235, 234, 231);
+    order:4;
+    padding:5px;
+    border-radius:5px;
+    border:double;
+    margin:0 auto;
+}
+
+.records th{
+    font-size:14pt;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.titreRecord{
+    padding-right:5px;
+}
+
+#gameOver{
+    font-family: 'Paytone One', sans-serif;
+    font-size:20pt;
+    position:absolute;
+    top:250px;
+    text-shadow: 5px 5px 5px rgb(136, 136, 136);
+    animation: 2s fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.actif{
+    display:block;
+}
+
+.inactif{
+    display:none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+TP1 - Exercice2
+Cours : Programmation interactive client-serveur
+Par : Marie-Josée Heck
+Date : 13 juin 2018
+-->
+<html lang="fr">
+	<head>
+		<title>TP1 - Exercice 2</title>
+		<meta charset="UTF-8" />
+		<link href="https://fonts.googleapis.com/css?family=Faster+One|Paytone+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="css/style2.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/exercice2.js"></script>
+	</head>
+	<body>
+		<h1>Résous le puzzle!</h1>
+		<p>Place les nombres en ordre croissant en moins de 500 coups.</p>
+		<div id="conteneur">
+
+			<div class="boxCompteur">
+				<span class="compteur">0</span>
+			</div>
+			<div class = "btnReessayer">RECOMMENCER</div>
+			<div id="gameOver" class="inactif">Game Over</div>
+		</div>
+		<table class="records">
+				<tr>
+					<th colspan="2">Meilleur score</th>
+				</tr>
+				<tr>
+					<td class="titreRecord">Joueur : </td>
+					<td><span id = "recordNom"></span></td>
+				</tr>
+				<tr>
+					<td class="titreRecord">Coups : </td>
+					<td><span id = "recordCoups"></span></td>
+				</tr>
+		</table>
+		
+	</body>
+</html>
