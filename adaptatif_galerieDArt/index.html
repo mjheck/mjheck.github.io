@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<!--
+Cours Création de sites web 1
+TP Final : Site web adaptatif
+Marie-Josée Heck - 21 décembre 2017
+Page: index.html
+-->
+
+<html lang="fr"> 
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="marie-josee heck">
+	<link rel="stylesheet" href="css/general.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <title>Cubique - Accueil</title>
+</head>
+<body>
+
+	<header>
+		<!--Bouton "Se connecter" pour la version mobile-->
+        <div class = "connecteMobile">
+            <input type="button" value="Se connecter"/>
+            <a href="#"><img src="images/panier2.png" alt="panier d'achat" height="27" width="27"></a>
+        </div>
+		<!--Entete: logo et slogan-->
+        <div class ="entete">
+			<p><a href = "index.html"><img class="logo" src="images/logo.png" alt="logo"></a></p>
+			<h1>L'art accessible</h1>
+        </div>
+	</header>
+	
+	<!--navigateur-->
+	<nav>
+        <ul>
+			<!--Barre de recherche-->
+            <li class="recherche">
+				<img src="images/loupe.png" alt="loupe"><input type="text" style="width:180px"/>
+            </li>
+			<!--Menu-->
+			<li class = "menu" id="actif"><a href="index.html">Accueil</a></li>
+            <li class = "menu"><a href="galerie.html">Galerie</a></li>
+            <li class = "menu"><a href="exposants.html">Exposants</a></li>
+            <li class = "menu"><a href="#">S'inscrire</a></li>
+            <li class = "connecter"><input type="button" value="Se connecter"/></li>
+            <li class = "panier"><a href="#"><img src="images/panier.png" alt="panier d'achat" height="27" width="27"></a></li>
+        </ul>
+	</nav>
+	
+	<!--Grande image principale-->
+	<div class="boxImgPrinc imgPrincIndex"></div>
+	
+	<!--Section présentation de la page-->
+	<section class="presentation">
+		<div class="cadrePresentation">
+			<h2>QUI SOMMES-NOUS</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum orci, eget posuere nunc. In eu posuere sapien, id maximus enim. Integer nec accumsan erat. Nulla metus elit, lobortis vitae auctor nec, condimentum at lectus. Proin facilisis augue sit amet eros condimentum, non pharetra mi congue. Proin congue suscipit rutrum. Maecenas commodo lectus eget libero facilisis, id rhoncus orci rutrum. Sed bibendum porta cursus.<br><br>
+			</p>
+			<p>
+				Donec vestibulum feugiat maximus. Sed efficitur iaculis ligula, at consectetur ante vulputate a. Nam tempus pretium accumsan. Nulla hendrerit est vitae dolor pellentesque, non dapibus tortor tincidunt. Mauris gravida arcu tempus, suscipit dolor sed, bibendum augue. Pellentesque mattis sem scelerisque, sodales libero eget, pretium augue. Vivamus a blandit ante, a luctus felis. Maecenas pellentesque maximus vulputate. 
+			</p>
+		</div>
+	</section>
+	
+	<!--Section navigation par catégorie-->
+	<section class="categorie">
+		<h2>Naviguer par catégorie</h2>
+		<!--Conteneur flex pour catégories-->
+		<div class="boxCategorie">
+            <div class="responsive iconeCategorie">
+				<div class="galerie noirBlanc">
+					<a href ="#"><img src="images/imgPeinture2.jpg" alt="Toiles" width="300" height="200"/></a>
+					<div class="descCat">Toiles</div>
+				</div>
+            </div>
+            <div class="responsive iconeCategorie">
+				<div class="galerie noirBlanc">
+					<a href ="#"><img src="images/imgDessins2.jpg" alt="Toiles" width="300" height="200"/></a>
+					<div class="descCat">Dessins</div>
+				</div>
+            </div>
+			<div class="responsive iconeCategorie">
+				<div class="galerie noirBlanc">
+					<a href ="#"><img src="images/imgPhotos2.jpg" alt="Toiles" width="300" height="200"/></a>
+					<div class="descCat">Photographies</div>
+				</div>
+			</div>
+			<div class="responsive iconeCategorie">
+				<div class="galerie noirBlanc">
+					<a href ="#">
+						<img src="images/imgArtisanat2.jpg" alt="Toiles" width="300" height="200"/>
+					</a>
+					<div class="descCat">Artisanat</div>
+				</div>
+            </div>
+        </div>
+		<!--Fin conteneur flex pour catégories-->
+		<p class="lienNormal"><a href = "galerie.html">Accéder à la galerie complète</a></p>
+	</section>
+	<!--Fin section navigation par catégories-->
+	
+	<!--Début section annonces: liens internes vers sections de vente du site-->
+    <section class="annonce">
+        <div class="imgAnnonce">
+            <img src="images/artiste.jpg"  alt="Artiste" width="1000" height="667" >
+        </div>
+        <div class="texteAnnonce">
+			<h2>Expose tes oeuvres sur Cubique</h2>
+            <p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum orci, eget posuere nunc. In eu posuere sapien, id maximus enim. Integer nec accumsan erat. Nulla metus elit, lobortis vitae auctor nec, condimentum at lectus. <br><br>Proin facilisis augue sit amet eros condimentum, non pharetra mi congue. Proin congue suscipit rutrum. Maecenas commodo lectus eget libero facilisis, id rhoncus orci rutrum. Sed bibendum porta cursus.
+			</p>
+            <p class="boutonInscrire"><input type="button" value="S'inscrire"/></p>
+        </div>
+    </section>
+	
+	<!--Bande bleue fin de la page-->
+    <div class="boxBleue"></div>
+	
+	<!--Début du Footer-->
+    <footer>
+        <div id="reseauxSociaux">
+            <p>Suivez-nous...</p>
+            <p class="imgReseaux">
+                <img src="images/imgFacebook.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgInstagram.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgTwitter.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgPinterest.png"  alt="Facebook" height="40" width="40">  
+            </p>
+            <p class="lienNormal paraContact"><a href="#">Contactez-nous</a></p>
+        </div>
+        <div id="credits">
+            <img src="images/logo2.png" alt="logo" width="25" height="29">
+            <p>Copyright 2017</p>
+        </div>
+    </footer>
+</body>

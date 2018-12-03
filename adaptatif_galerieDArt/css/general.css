@@ -1,0 +1,582 @@
+﻿/*
+Cours Création de sites web 1
+TP Final : Site web adaptatif
+Marie-Josée Heck - 21 décembre 2017
+Page: general.css
+*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, a blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:center;
+	font: inherit;
+}
+
+/**************Général**************/
+
+body{
+    background-color:#f2f0f3; /*Blanc*/
+	font-family:'Open Sans', sans-serif;
+	color:#241a17; /*noir*/
+	margin:0 auto;
+	padding-top:10px;
+	max-width:1980px;
+}
+
+header{
+	padding-left:16px;
+	padding-right:16px;
+}
+
+header h1{
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+/*Navigateur*/
+nav{
+    background-color: #044a71; /*Bleu*/
+	color:#f2f0f3; 
+	font-size:1.1em;
+}
+
+ul{
+    list-style: none;
+}
+
+.recherche input[type=text]{
+    border: none;
+    background-color: #f2f0f3;
+    border-radius:2px;
+}
+
+nav input[type=button]{
+    border: none;
+    border-radius:2px;
+    background-color: #e5e5e7;
+    color:#241a17;
+	transition:color 0.5s;
+}
+
+nav input[type=button]:hover{
+    color: #d6b0bb;
+}
+
+h2{
+	text-align:center;
+	font-family:'Hammersmith One', sans-serif;
+}
+
+/*Grande image principale*/
+.boxImgPrinc{
+		margin-top:15px;
+		margin-bottom:20px;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+.imgPrincIndex{
+		background-image: url("../images/fondCarres.jpg");
+		background-position:10% 75%;
+	}
+	
+.imgPrincGalerie{
+	background-image: url("../images/fondFille.jpg");
+	background-position:50% 20%;
+}
+
+.imgPrincExposants{
+	background-image: url("../images/fondExposants.jpg");
+	background-position:20% 20%;
+}
+
+/*section présentation*/
+.presentation{
+	font-size:0.8em;
+    margin:0 auto;
+}
+
+.presentation h2{
+	font-size:1.8em;
+	margin-bottom:10px;
+}
+
+.cadrePresentation{
+	border:1px solid #d6b0bb;
+	margin:5%;
+	padding:30px;
+}
+
+/*hyperliens généraux*/
+.lienNormal a, .lienNormal a:visited{
+    color:#241a17;
+}
+
+.lienNormal a:hover{
+    color:#0673b0;
+}
+
+.pageSuivante{
+	text-align:center;
+}
+
+/*bouton section annonce*/
+.boutonInscrire {
+	margin-top:20px;
+    text-align: center;
+}
+
+.boutonInscrire input[type=button]{
+    background-color: #0673b0;
+    border:none;
+    padding:10px;
+    color:#f2f0f3;
+    border-radius:2px;
+	transition:all 0.5s ease-out;
+}
+
+#coulDiff input[type=button]{
+	background-color: #76897e;
+}
+
+.boutonInscrire input[type=button]:hover{
+    box-shadow: 3px 3px 4px black;
+	transform: scale(1.1,1.1);
+}
+
+.boxBleue{
+    background-color: #044a71;
+    height:38px;
+}
+
+#credits{
+    font-size: 0.8em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+#credits img{
+    margin-right:5px;
+}
+/*******************style desktop (éléments communs)**********************/
+@media only screen and (min-width:769px){
+
+    .entete{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        }
+    
+	.logo{
+		width:140px;
+		height:auto;
+	}
+	
+	header h1{
+		font-size:1.5em;
+	}
+	
+	/*navigateur*/
+    ul{
+		font-size:0.9em;
+        display: flex;
+        justify-content: flex-end;;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+    
+	.recherche img{
+		width:30px;
+		height:auto;
+	}
+	
+	.recherche input[type=text]{
+    padding:5px;
+	margin-left: 18px;
+	}
+
+	nav input[type=button]{
+		padding:5px;
+		margin-left: 18px;
+		margin-right:18px;
+	}
+	
+	.menu a, .menu a:visited{
+		padding:10px;
+		display: block;
+		color:#f2f0f3;
+		text-decoration:none;
+		transition:background-color 0.5s;
+	}
+
+	.menu a:hover{
+		background-color: #05567F;
+	}
+	
+	.menu .actif a{
+		background-color: #05567F;
+	}
+	
+	#actif a{
+		background-color: #05567F;
+	}
+	
+    .connecteMobile{
+        display:none;
+    }
+  
+	.recherche{
+	margin-left:10px;
+    display:flex;
+    align-items: center;
+	flex-grow: 1;
+	}  
+
+    .panier img{
+        padding:7px;
+        display: flex;
+        align-items: center;
+    }
+
+    .panier a:hover{
+        display:block;
+        background-color: #05567F;
+    }
+	
+	/*Grande image */
+	.boxImgPrinc{
+		height: 65vh;
+	}
+	
+	/*Sections*/
+    .presentation{
+		max-width:1200px;
+    }
+	
+	.annonce{
+		max-width:1650px;
+		padding-top:4%;
+		margin:auto;
+		margin-bottom:4%;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-size:0.9em;
+	}
+
+	.annonce h2{
+		font-size:1.2em;
+		padding-bottom: 10px;
+	}
+
+	.imgAnnonce{
+		width:40%;
+		min-width:420px;
+	}
+
+	.imgAnnonce img{
+		width:100%;
+		height:auto;
+		
+	}
+
+	.texteAnnonce{
+		max-width:40%;
+		margin-left:20px;
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+
+	/*footer*/
+	#reseauxSociaux{
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-top:20px;
+		font-size:0.9em;
+	}
+
+	#reseauxSociaux img{
+		margin-left:20px;
+	}
+}
+
+/**************style mobile et tablette (éléments communs)**************/
+@media only screen and (max-width:768px){
+    body{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .entete{
+        display:flex;
+        justify-content: space-between;
+		align-items:flex-end;
+    }
+	
+	.logo{
+		width:100px;
+		height:auto;
+	}
+	
+	header h1{
+		font-size:1.2em;
+	}
+	
+	/*Navigateur*/
+    ul{
+		font-size:0.8em;
+    }
+	
+	.recherche img{
+		width:22px;
+		height:auto;
+		vertical-align:middle;
+	}
+	
+	.recherche{
+		margin-top:5px;
+		text-align:center;
+	}
+	
+	.recherche input[type=text]{
+		padding:3px;
+		margin-left:5px;
+	}
+
+	nav input[type=button]{
+		padding:3px;
+		margin-left:5px;
+	}
+	
+	.menu a, .menu a:visited{
+		display:flex;
+		justify-content:center;
+		padding:6px;
+		color:#f2f0f3;
+		text-decoration:none;
+	}
+
+	.menu a:hover{
+		background-color: #05567F;
+	}
+	
+	#actif a{
+		background-color: #05567F;
+	}
+	
+    .connecter, .panier{
+        display:none;
+    }
+    
+    .connecteMobile{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom:5px;
+    }
+    
+    .connecteMobile img{
+        display:flex;
+        margin-left:5px;
+    }
+    
+    .connecteMobile input[type=button]{
+        background-color: #044a71;
+        color:#f2f0f3;
+        border:none;
+        border-radius:2px;
+        font-size:0.7em;
+        padding:4px;
+		transition:box-shadow 0.5s;
+    }
+    
+    .connecteMobile input[type=button]:hover{
+        box-shadow: 2px 2px 5px #d6b0bb;
+    }
+	
+    /*Grande image*/
+	.boxImgPrinc{
+		height: 28vh;
+	}
+	
+	/*Sections*/
+	.annonce{
+		margin-top:10px;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+	
+	.imgAnnonce img{
+		width:100%;
+		height:auto;
+		max-width:500px;
+	}
+
+	.texteAnnonce{
+		margin:10px;
+		font-size:0.9em;
+	}
+
+	.annonce h2{
+		font-size:1.2em;
+		padding-bottom:10px;
+	}
+	
+	/*Footer*/
+	#reseauxSociaux{
+		margin-top:10px;
+		font-size:0.8em;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+		
+	.imgReseaux img{
+		width:30px;
+		height:auto;
+	}
+
+	.paraContact{
+		padding:15px;
+	}
+
+	#credits{
+		margin-top:15px;
+		font-size:0.7em;
+	}
+}
+
+/******************Éléments spécifiques aux blocs responsive******************/
+
+.categorie{
+    background-image:url("../images/motif.png");
+	padding-top:3%;
+    padding-bottom:3%;
+    display:flex;
+    flex-direction:column;
+	align-items:center;
+}
+
+.boxCategorie{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:15px;
+    margin-bottom:15px;
+	box-sizing:border-box;
+}
+
+.categorie h2, .sousTitre h2{
+	font-size:1.5em;
+}
+
+.responsive{
+    margin:6px;
+    background-color: #f2f0f3;
+	width:22%;
+}
+
+.iconeCategorie{
+	box-shadow:1px 1px 2px gray;
+}
+
+@media only screen and (max-width:800px){
+	.responsive{
+		width:46%;
+	}
+}
+
+@media only screen and (max-width:500px){
+	.responsive{
+		width:80%;
+	}
+}
+
+div.galerie img{
+    width:100%;
+	height:auto;
+}
+
+div.noirBlanc img{
+	filter: grayscale(100%);
+	transition: filter 0.5s ease-out;
+}
+
+div.noirBlanc img:hover{
+	filter: none;
+}
+
+div.descCat{
+	padding:10px;
+	text-align:center;
+}
+
+/************Éléments spécifiques à la section exposants**************/
+
+	.sectionExposants{
+		margin-top:20px;
+		max-width:1650px;
+		margin:0 auto;
+	}
+
+	.titreExpo{
+		font-size:1.5em;
+		padding-bottom:20px;
+	}
+	
+	.bio h3{
+		font-weight:bold;
+		text-align:center;
+		padding-bottom:10px;
+	}
+	
+	
+	.boxTousExposants{
+		font-size:0.8em;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+
+	.boxExposant{
+		width:25%;
+		background-image:url("../images/motif.png");
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		padding-bottom:10px;
+	}
+
+	@media only screen and (max-width:920px){
+	.boxExposant{
+		width:100%;
+		margin-bottom:10px;
+	}
+}
+	.sansBackground{
+		background-image:none;
+	}
+
+	.artiste{
+		width:33%;
+		height:auto;
+		min-width:150px;
+		max-width:200px;
+	}
+
+	.artiste img{
+		width: 100%;
+		height:auto;
+
+	}
+
+	.bio{
+		width:80%;
+	}

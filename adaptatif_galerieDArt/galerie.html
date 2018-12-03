@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<!--
+Cours Création de sites web 1
+TP Final : Site web adaptatif
+Marie-Josée Heck - 21 décembre 2017
+Page: galerie.html
+-->
+
+<html lang="fr"> 
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="marie-josee heck">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/galerie.css">
+	<link rel="stylesheet" type="text/css" href="css/csshake-rotate.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Cubique - Galerie</title>
+</head>
+<body>
+	<header>
+		<!--Bouton "Se connecter" pour la version mobile-->
+        <div class = "connecteMobile">
+            <input type="button" value="Se connecter"/>
+            <a href="#"><img src="images/panier2.png" alt="panier d'achat" height="27" width="27"></a>
+        </div>
+		<!--Entete: logo et slogan-->
+        <div class ="entete">
+			<p><a href = "index.html"><img class="logo" src="images/logo.png" alt="logo"></a></p>
+			<h1>L'art accessible</h1>
+        </div>
+	</header>
+	
+	<!--navigateur-->
+	<nav>
+        <ul>
+			<!--Barre de recherche-->
+            <li class="recherche">
+				<img src="images/loupe.png" alt="loupe"><input type="text" style="width:180px"/>
+            </li>
+			<!--Menu-->
+			<li class = "menu"><a href="index.html">Accueil</a></li>
+            <li class = "menu" id="actif"><a href="galerie.html">Galerie</a></li>
+            <li class = "menu"><a href="exposants.html">Exposants</a></li>
+            <li class = "menu"><a href="#">S'inscrire</a></li>
+            <li class = "connecter"><input type="button" value="Se connecter"/></li>
+            <li class = "panier"><a href="#"><img src="images/panier.png" alt="panier d'achat" height="27" width="27"></a></li>
+        </ul>
+	</nav>
+	
+	<!--Grande image principale-->
+	<div class="boxImgPrinc imgPrincGalerie"></div>
+	
+	<!--Deuxième barre de navigation pour recherche par filtre-->
+	<div class="navSec">
+		<ul>
+			<li><a href="#">Recherche avancée</a></li>
+			<li><a href="#">Toiles</a></li>
+			<li><a href="#">Dessins</a></li>
+			<li><a href="#">Photographies</a></li>
+			<li><a href="#">Artisanat</a></li>
+		</ul>
+	</div>
+	
+	<!--Début section galerie des oeuvres-->
+	<section class="sectionGalerie">
+		<h2>Galerie</h2>
+		<!--Début conteneur flex galerie de photos-->
+		<div class="boxGalerie">
+			<div class="responsive etiquette">
+				<div class="galerie">
+					<a href= "images/galerie/Aubergine.jpg">
+						<img class="relief" src="images/aubergineIcone.jpg" alt="Toiles" width="300" height="200"/>
+					</a>
+					<div class="desc">
+						<p class="prix">49,99$CAD</p>
+						<p class="titre">Titre</p>
+						<p class="auteur lienNormal">par <a href="#">Prénom Nom</a></p>
+						<p class="description">Dimensions</p>
+						<p class="description">Brève description de la technique utilisée</p>
+						<p class="lienDetails lienNormal"><a href="#">Détails</a></a></p>
+						<p class="ajouter"><input  type="button" value="Ajouter au panier"></p>
+					</div>
+				</div>
+			</div>
+			<div class="responsive etiquette">
+				<div class="galerie">
+					<a href ="images/galerie/becosse.jpg">
+						<img class="relief" src="images/becosseIcone.jpg" alt="becosse" width="300" height="200"/>
+					</a>
+					<div class="desc">
+						<p class="prix">49,99$CAD</p>
+						<p class="titre">Titre</p>
+						<p class="auteur lienNormal">par <a href="#">Prénom Nom</a></p>
+						<p class="description">Dimensions</p>
+						<p class="description">Brève description de la technique utilisée</p>
+						<p class="lienDetails lienNormal"><a href="#">Détails</a></a></p>
+						<p class="ajouter"><input  type="button" value="Ajouter au panier"></p>					
+					</div>
+				</div>
+			</div>
+			<div class="responsive etiquette">
+				<div class="galerie">
+					<a href ="images/galerie/main.jpg">
+						<img class="relief" src="images/mainIcone.jpg" alt="main" width="300" height="200"/>
+					</a>
+					<div class="desc">
+						<p class="prix">49,99$CAD</p>
+						<p class="titre">Titre</p>
+						<p class="auteur lienNormal">par <a href="#">Prénom Nom</a></p>
+						<p class="description">Dimensions</p>
+						<p class="description">Brève description de la technique utilisée</p>
+						<p class="lienDetails lienNormal"><a href="#">Détails</a></a></p>
+						<p class="ajouter"><input  type="button" value="Ajouter au panier"></p>
+					</div>
+				</div>
+			</div>
+			<div class="responsive etiquette">
+				<div class="galerie">
+					<a href ="images/galerie/poire.jpg">
+						<img class="relief" src="images/poireIcone.jpg" alt="Toiles" width="300" height="200"/>
+					</a>
+					<div class="desc">
+						<p class="prix">49,99$CAD</p>
+						<p class="titre">Titre</p>
+						<p class="auteur lienNormal">par <a href="#">Prénom Nom</a></p>
+						<p class="description">Dimensions</p>
+						<p class="description">Brève description de la technique utilisée</p>
+						<p class="lienDetails lienNormal"><a href="#">Détails</a></a></p>
+						<p class="ajouter"><input  type="button" value="Ajouter au panier"></p>
+					</div>
+				</div>
+			</div>
+			<div class="responsive etiquette">
+				<div class="galerie">
+					<a href ="images/galerie/visageCasse.jpg">
+						<img class="relief" src="images/visageCasseIcone.jpg" alt="visage casse" width="300" height="200"/>
+					</a>
+					<div class="desc">
+						<p class="prix">49,99$CAD</p>
+						<p class="titre">Titre</p>
+						<p class="auteur lienNormal">par <a href="#">Prénom Nom</a></p>
+						<p class="description">Dimensions</p>
+						<p class="description">Brève description de la technique utilisée</p>
+						<p class="lienDetails lienNormal"><a href="#">Détails</a></a></p>
+						<p class="ajouter"><input  type="button" value="Ajouter au panier"></p>
+					</div>
+				</div>
+			</div>
+			<div class="responsive etiquette">
+				<div class="galerie">
+					<a href ="images/galerie/visageFemme.jpg">
+						<img class="relief" src="images/visageFemmeIcone.jpg" alt="Toiles" width="300" height="200"/>
+					</a>
+					<div class="desc">
+						<p class="prix">49,99$CAD</p>
+						<p class="titre">Titre</p>
+						<p class="auteur lienNormal">par <a href="#">Prénom Nom</a></p>
+						<p class="description">Dimensions</p>
+						<p class="description">Brève description de la technique utilisée</p>
+						<p class="lienDetails lienNormal"><a href="#">Détails</a></a></p>
+						<p class="ajouter"><input  type="button" value="Ajouter au panier"></p>
+					</div>
+				</div>
+			</div>
+			<div class="responsive etiquette">
+				<div class="galerie">
+					<a href ="images/galerie/visageHomme.jpg">
+						<img class="relief" src="images/visageHommeIcone.jpg" alt="Toiles" width="300" height="200"/>
+					</a>
+					<div class="desc">
+						<p class="prix">49,99$CAD</p>
+						<p class="titre">Titre</p>
+						<p class="auteur lienNormal">par <a href="#">Prénom Nom</a></p>
+						<p class="description">Dimensions</p>
+						<p class="description">Brève description de la technique utilisée</p>
+						<p class="lienDetails lienNormal"><a href="#">Détails</a></a></p>
+						<p class="ajouter"><input  type="button" value="Ajouter au panier"></p>
+					</div>
+				</div>
+			</div>
+			<div class="responsive etiquette">
+				<div class="galerie">
+					<a href ="images/galerie/cat.png">
+						<img class="relief" src="images/catIcone.png" alt="Toiles" width="300" height="200"/>
+					</a>
+					<div class="desc">
+						<p class="prix">49,99$CAD</p>
+						<p class="titre">Titre</p>
+						<p class="auteur lienNormal">par <a href="#">Prénom Nom</a></p>
+						<p class="description">Dimensions</p>
+						<p class="description">Brève description de la technique utilisée</p>
+						<p class="lienDetails lienNormal"><a href="#">Détails</a></a></p>
+						<p class="ajouter"><input  type="button" value="Ajouter au panier"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Fin conteneur flex pour images galerie-->
+		<p class="lienNormal pageSuivante"><a href = "#">Page suivante</a></p>
+	</section>
+	<!--Fin section galerie des oeuvres-->
+	
+	<!--Début section annonces: liens internes vers sections de vente du site-->
+    <section class="annonce">
+		<div class="imgAnnonce">
+		<img src="images/telephones.jpg"  alt="Artiste" width="1000" height="667" >
+		</div>
+		<div class="texteAnnonce">
+			<h2>Commande facile et rapide</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum orci, eget posuere nunc. In eu posuere sapien, id maximus enim. Integer nec accumsan erat. Nulla metus elit, lobortis vitae auctor nec, condimentum at lectus. <br><br>Proin facilisis augue sit amet eros condimentum, non pharetra mi congue. Proin congue suscipit rutrum. Maecenas commodo lectus eget libero facilisis, id rhoncus orci rutrum. Sed bibendum porta cursus.
+			</p>
+			<p class="boutonCommander shake-rotate"><input type="button" value="Commander"/></p>
+		</div>
+	</section>
+	
+	<!--Bande bleue fin de la page-->
+    <div class="boxBleue"></div>
+	
+	<!--Footer-->
+    <footer>
+        <div id="reseauxSociaux">
+            <p>Suivez-nous...</p>
+            <p class="imgReseaux">
+                <img src="images/imgFacebook.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgInstagram.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgTwitter.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgPinterest.png"  alt="Facebook" height="40" width="40">  
+            </p>
+            <p class="lienNormal paraContact"><a href="#">Contactez-nous</a></p>
+        </div>
+        <div id="credits">
+            <img src="images/logo2.png" alt="logo" width="25" height="29">
+            <p>Copyright 2017</p>
+        </div>
+    </footer>
+</body>

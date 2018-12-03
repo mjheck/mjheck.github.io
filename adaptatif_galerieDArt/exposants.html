@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<!--
+Cours Création de sites web 1
+TP Final : Site web adaptatif
+Marie-Josée Heck - 21 décembre 2017
+Page: exposants.html
+-->
+
+<html lang="fr"> 
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="marie-josee heck">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/galerie.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <title>Cubique - Exposants</title>
+</head>
+<body>	
+	<header>
+		<!--Bouton "Se connecter" pour la version mobile-->
+        <div class = "connecteMobile">
+            <input type="button" value="Se connecter"/>
+            <a href="#"><img src="images/panier2.png" alt="panier d'achat" height="27" width="27"></a>
+        </div>
+		<!--Entete: logo et slogan-->
+        <div class ="entete">
+			<p><a href = "index.html"><img class="logo" src="images/logo.png" alt="logo"></a></p>
+			<h1>L'art accessible</h1>
+        </div>
+	</header>
+	
+	<!--navigateur-->
+	<nav>
+        <ul>
+			<!--Barre de recherche-->
+            <li class="recherche">
+				<img src="images/loupe.png" alt="loupe"><input type="text" style="width:180px"/>
+            </li>
+			<!--Menu-->
+			<li class = "menu"><a href="index.html">Accueil</a></li>
+            <li class = "menu"><a href="galerie.html">Galerie</a></li>
+            <li class = "menu" id="actif"><a href="exposants.html">Exposants</a></li>
+            <li class = "menu"><a href="#">S'inscrire</a></li>
+            <li class = "connecter"><input type="button" value="Se connecter"/></li>
+            <li class = "panier"><a href="#"><img src="images/panier.png" alt="panier d'achat" height="27" width="27"></a></li>
+        </ul>
+	</nav>
+	
+	<!--Grande image principale-->
+	<div class="boxImgPrinc imgPrincExposants"></div>
+	<!--Section présentation de la page-->
+	<section class="presentation">
+		<div class="cadrePresentation">
+			<h2>PRÉSENTE-TOI</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum orci, eget posuere nunc. In eu posuere sapien, id maximus enim. Integer nec accumsan erat. Nulla metus elit, lobortis vitae auctor nec, condimentum at lectus. Proin facilisis augue sit amet eros condimentum, non pharetra mi congue. Proin congue suscipit rutrum. Maecenas commodo lectus eget libero facilisis, id rhoncus orci rutrum. Sed bibendum porta cursus.<br><br>
+			</p>
+			<p>
+				Donec vestibulum feugiat maximus. Sed efficitur iaculis ligula, at consectetur ante vulputate a. Nam tempus pretium accumsan. Nulla hendrerit est vitae dolor pellentesque, non dapibus tortor tincidunt. Mauris gravida arcu tempus, suscipit dolor sed, bibendum augue. Pellentesque mattis sem scelerisque, sodales libero eget, pretium augue. Vivamus a blandit ante, a luctus felis. Maecenas pellentesque maximus vulputate. 
+			</p>
+		</div>
+	</section>
+	
+	<!--Deuxième barre de navigation pour recherche par filtre-->
+	<div class="navSec">
+		<ul>
+			<li><a href="#">Recherche avancée</a></li>
+			<li><a href="#">A-E</a></li>
+			<li><a href="#">F-J</a></li>
+			<li><a href="#">K-P</a></li>
+			<li><a href="#">Q-Z</a></li>
+		</ul>
+	</div>
+	
+	<!--Début section des exposants-->
+	<section class = "sectionExposants">
+		<h2 class="titreExpo">Les exposants</h2>
+		<div class = "boxTousExposants">
+			<div class="boxExposant">
+				<div class="artiste">
+				<img src="images/artiste1.jpg" alt="artiste1" width="892" height="1034">
+				</div>
+				<div class="bio"><h3>Prénom nom, profession</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum orci, eget posuere nunc. In eu posuere sapien, id maximus enim. Integer nec accumsan erat. Nulla metus elit, lobortis vitae auctor nec, condimentum at lectus. roin congue suscipit rutrum.
+				</div>
+			</div>
+			<div class="boxExposant sansBackground">
+				<div class="artiste">
+				<img src="images/artiste2.jpg" alt="artiste1" width="300" height="388">
+				</div>
+				<div class="bio"><h3>Prénom nom, profession</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum orci, eget posuere nunc. In eu posuere sapien, id maximus enim. Integer nec accumsan erat. roin congue suscipit rutrum. Maecenas commodo lectus eget libero facilisis, id rhoncus orci rutrum. Sed bibendum porta cursus.
+				</div>
+			</div>
+			<div class="boxExposant">
+				<div class="artiste">
+				<img src="images/artiste3.jpg" alt="artiste1" width="302" height="449">
+				</div>
+				<div class="bio"><h3>Prénom nom, profession</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum orci, eget posuere nunc. In eu posuere sapien, id maximus enim. Integer nec accumsan erat. Nulla metus elit, lobortis vitae auctor nec, condimentum at lectus. roin congue suscipit rutrum. Maecenas commodo lectus eget libero facilisis.
+				</div>
+			</div>
+		</div>
+		<p class="lienNormal pageSuivante"><a href = "#">Page suivante</a></p>
+	</section>
+	<!--Fin section des exposants-->
+	
+	<!--Début section annonces: liens internes vers sections de vente du site-->
+    <section class="annonce">
+		<div class="imgAnnonce">
+			<img src="images/oeil.jpg"  alt="Artiste" width="900" height="667" >
+		</div>
+		<div class="texteAnnonce">
+			<h2>Garde l'oeil ouvert</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et condimentum orci, eget posuere nunc. In eu posuere sapien, id maximus enim. Integer nec accumsan erat. Nulla metus elit, lobortis vitae auctor nec, condimentum at lectus. <br><br>Proin facilisis augue sit amet eros condimentum, non pharetra mi congue. Proin congue suscipit rutrum. Maecenas commodo lectus eget libero facilisis, id rhoncus orci rutrum. Sed bibendum porta cursus.</p>
+			<p class="boutonInscrire" id="coulDiff"><input type="button" value="Je m'abonne à l'infolettre"/></p>
+		</div>
+    </section>
+	
+	<!--Bande bleue fin de la page-->
+    <div class="boxBleue"></div>
+	
+	<!--Footer-->
+    <footer>
+        <div id="reseauxSociaux">
+            <p>Suivez-nous...</p>
+            <p class="imgReseaux">
+                <img src="images/imgFacebook.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgInstagram.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgTwitter.png"  alt="Facebook" height="40" width="40">
+                <img src="images/imgPinterest.png"  alt="Facebook" height="40" width="40">  
+            </p>
+            <p class="lienNormal paraContact"><a href="#">Contactez-nous</a></p>
+        </div>
+        <div id="credits">
+            <img src="images/logo2.png" alt="logo" width="25" height="29">
+            <p>Copyright 2017</p>
+        </div>
+    </footer>
+</body>

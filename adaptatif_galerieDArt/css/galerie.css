@@ -1,0 +1,155 @@
+﻿/*
+Cours Création de sites web 1
+TP Final : Site web adaptatif
+Marie-Josée Heck - 21 décembre 2017
+Page: galerie.css
+*/
+
+
+/**************Éléments généraux concernant la galerie de la page Galerie**************/
+.navSec a, .navSec a:visited{
+    color:#241a17;
+	text-decoration:none;
+	transition: all 0.3s;
+}
+
+.navSec a:hover{
+     text-shadow: 0 0 3px black;
+	 color:white;
+}
+
+.sectionGalerie{
+	margin:0 auto;
+	max-width:1650px;
+}
+
+.sectionGalerie h2,.pageSuivante{
+	padding-top:14px;
+	padding-bottom:20px;
+}
+
+.sectionGalerie h2{
+	font-size:1.5em;
+	width:100%;
+}
+
+.boxGalerie{
+	width:90%;
+	margin:0 auto;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content:center
+
+}
+.desc p{
+	padding:3px;
+}
+.prix{
+	text-align:right;
+	font-size:1.1em;
+}
+
+.titre, .auteur, .description, .lienDetails, .ajouter{
+	text-align:center;
+}
+
+.titre{
+	font-weight:bold;
+}
+
+.auteur{
+	font-size:0.9em;
+}
+
+.description{
+	font-size:0.7em;
+}
+
+.lienDetails{
+	font-size:0.8em;
+}
+
+.etiquette{
+	padding-bottom:10px;
+	margin:12px;
+	background-color:#e5e5e7;
+}
+
+.relief{
+	transition:box-shadow 0.5s;
+}
+
+.relief:hover{
+	box-shadow: 3px 3px 6px black;
+}
+
+.ajouter input[type=button]{
+	border:none;
+	border-radius:2px;
+	background-color:white;
+	padding:4px;
+	transition:all 0.5s;
+}
+
+.ajouter input[type=button]:hover{
+    color: #d6b0bb;
+}
+
+.boutonCommander {
+	margin-top:20px;
+	text-align:center;
+}
+
+.boutonCommander input[type=button]{
+    background-color: #ce6d1c;
+    border:none;
+    padding:10px;
+    color:#f2f0f3;
+    border-radius:2px;
+}
+
+.boutonCommander input[type=button]:hover{
+    box-shadow: 3px 3px 3px black;
+}
+
+/**************style desktop pour la galerie de la page Galerie**************/
+@media only screen and (min-width:769px){
+	
+	.navSec{
+	margin-bottom:8px;
+	margin-top:8px;
+	}
+	
+	.navSec ul{
+	display:flex;
+	justify-content:center;
+	}
+
+	.navSec ul li{
+		padding-left:2%;
+		padding-right:2%;
+		border-right: 1px solid #d6b0bb;
+	}
+
+	.navSec ul li:first-child{
+		border-left:1px solid #d6b0bb;
+	}
+}
+/**************style mobile et tablette pour la galerie de la page Galerie**************/
+@media only screen and (max-width:768px){
+	.navSec{
+		margin-top:-5px;
+		margin-right:10%;
+		margin-left:10%;
+	}
+	
+	.navSec ul li{
+		border-top:0.8px solid #d6b0bb;
+		text-align:center;
+		padding:3px;
+	}
+	
+	.navSec ul li:first-child{
+		border:none;
+	}
+}
