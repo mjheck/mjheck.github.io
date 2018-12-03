@@ -1,0 +1,67 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color:#fdfdfd;
+	color:#393939;
+}
+
+header{
+	margin-bottom:50px;
+}
+
+h1{
+	font-size:2.5rem;
+}
+
+h2{
+	color:#6e6e6e;
+}
+
+.conteneur{
+	max-width:1000px;
+	margin:0 auto;
+}
+
+
+table{
+	margin:0 auto;
+	border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2
+}
+
+a{
+	white-space:nowrap;
+}
+
+a,
+a:visited{
+	text-decoration:none;
+	color:orange;
+	font-weight:bold
+	padding:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
