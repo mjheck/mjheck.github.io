@@ -38,14 +38,22 @@ tr:nth-child(even){
 
 a{
 	white-space:nowrap;
+	padding:5px;
+	margin:3px 0;
+	-webkit-transition: box-shadow 0.5s; /* Safari */
+    transition: box-shadow 0.5s;
 }
+
+a:hover{
+	box-shadow: 5px 5px 5px #393939;
+}
+
 
 a,
 a:visited{
 	text-decoration:none;
-	color:orange;
-	font-weight:bold
-	padding:5px;
+	color:#d98026;
+	padding:6px;
 }
 
 
