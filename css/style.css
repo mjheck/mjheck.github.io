@@ -236,10 +236,6 @@ blockquote ~ div{
 	width:80px;
 }
 
-#competences li{
-	list-style-type: disc;
-}
-
 #competences table{
 	width:95%;
 	margin:0 auto;
