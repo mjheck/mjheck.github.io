@@ -45,7 +45,7 @@
             "titre": "Cubique", 
             "sousTitre":"Galerie d'art virtuelle",
             "desc":"Élaboration de l'image de marque d'une entreprise fictive et création de trois pages statiques, adaptées aux mobiles, représentatives de son site web.",
-            "thumbnail":"thumbnail-cubique.jpg",
+            "thumbnail":"thumbnail-cubique.JPG",
             "imgPages":["cubique-1.png", "cubique-2.jpg", "cubique-3.jpg"],
             "lienSite":"adaptatif_galerie-cubique/index.html",
             "outils":["HTML","CSS", "Flexbox", "Photohop", "Illustrator"]
