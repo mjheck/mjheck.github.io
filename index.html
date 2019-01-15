@@ -1,48 +1,165 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr"> 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="mjheck">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-	<link rel="stylesheet" href="style.css">
+	<meta name="author" content="mjheck">
+	<link rel="icon" type="image/png" href="images/programming-code-signs.png" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900" rel="stylesheet"> 
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
     <title>Marie-Josée Heck</title>
 </head>
 <body>
-<div class="conteneur">
+
+	<nav>
+		<ul>
+			<li><a class="social" href="https://www.linkedin.com/in/marie-jos%C3%A9e-heck-148b0094/"><img src="images/linkedin.png" width="28px"/></a></li>
+			<li><a href="#presentation">Présentation</a></li>
+			<li><a href="#competences">Compétences</a></li>
+			<li><a href="#realisations">Réalisations</a></li>
+		</ul>
+	</nav>
+
 	<header>
-		<h1>Marie-Josée Heck</h1>
-		<h2>Développeuse Web</h2>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/caracteres7.jpg">
+			<div class="titre">
+				<h1>Marie-Josée Heck</h1>
+				<h2>Développeuse Web</h2>
+			</div>
+		</div>
 	</header>
+
 	<main>
-		<table>
-			<tr>
-				<td>Le but de l'exercice était de créer une page adaptative en utilisant Flexbox. La thématique était libre. Le manque de contrainte peut parfois mener au délire...</td>
-				<td><a href="adaptatif_delire/index.html" target="_blank">Invasion</a></td>
-			</tr>
-			<tr>
-				<td>L'objectif de ce projet était d'élaborer l'image de marque d'une entreprise fictive (logo, slogan, etc.) et créer trois pages statiques représentatives de son site web, adaptées pour les desktops, tablettes et mobiles.</td>
-				<td><a href="adaptatif_galerie-cubique/index.html" target="_blank">Galerie Cubique</a></td>
-			</tr>
-			<tr>
-				<td>Création d'une carte d'anniversaire animé intégrant du son.</td>
-				<td><a href="animation_bonne-fete/index.html" target="_blank">Joyeux anniversaire</a></td>
-			</tr>
-			<tr>
-				<td>Jeu de puzzle réalisé en Javascript et CSS</td>
-				<td><a href="jeu-tuiles/index.html" target="_blank">Jouer!</a></td>
-			</tr>
-			<tr>
-				<td>Création d'un thème complet pour le CMS Opencart, destiné au e-commerce. Le thème devait respecter la maquette fournie et être adapté au commerce de notre choix</td>
-				<td><ul>
-					<li><a href="images/maquette.pdf" target="_blank">Maquette</a></li>
-					<li><a href="images/sofa-crown_accueil.jpg" target="_blank">Sofa Crown - Accueil</a></li>
-					<li><a href="images/sofa-crown_article.jpg" target="_blank">Sofa Crown - Produit</a></li>
+		<section id="presentation" class="conteneur">
+			<blockquote>
+				<p>J'ai débuté mon parcours professionnel dans le domaine de la sociologie et de l'histoire. Mon désir d’apprendre et de comprendre le monde m'a par la suite dirigée vers la programmation et le développement Web.</p>
+				<p>La programmation web est rapidement devenue une passion pour moi. Elle me permet de mettre à profit mon esprit cartésien et mes besoins créatifs.</p>
+				<p>L'innovation, l'autonomie, la confiance et l'entraide occupent une place prépondérante au sein de mon travail. Davantage douée en programmmation, j'aime aussi mettre en pratique les aptitudes que j’ai acquises en sociologie pour le développement d'interfaces conviviales respectant les principes du design UX/UI.</p>
+			</blockquote>
+			<div>
+				<a href="images/cv_mjheck.pdf" download><img src="images/download-cv.png" width="60px"/></a>
+			</div>
+		</section>
+		
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/ordi.jpg"></div>
+		
+		<section id="competences" class="conteneur">
+			<h3>Compétences</h3>
+			<div class="conteneur-flex">
+				<div class="wrapper-tab">
+					<table>
+						<thead><tr><th colspan="2">Langages</th></tr></thead>
+						<tbody>
+							<tr>
+								<td>CSS</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-un" data-pourcentage="80"></div><span></span></div></td>
+							</tr>
+							<tr>
+								<td>HTML</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-un" data-pourcentage="90"></div><span></span></div></td>
+							</tr>
+							<tr>
+								<td>Javascript</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-un " data-pourcentage="80"></div><span></span></div></td>
+							</tr>
+							<tr>
+								<td>PHP / mySQL</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-un" data-pourcentage="95"></div><span></span></div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="wrapper-tab">
+					<table>
+						<thead><tr><th colspan="2">CMS et Frameworks</th></tr></thead>
+						<tbody>
+							<tr>
+								<td>Bootstrap</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-deux" data-pourcentage="60"></div><span></span></div></td>
+							</tr>
+							<tr>
+								<td>JQuery</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-deux" data-pourcentage="75"></div><span></span></div></td>
+							</tr>
+							<tr>
+								<td>Opencart</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-deux" data-pourcentage="80"></div><span></span></div></td>
+							</tr>
+							<tr>
+								<td>Wordpress</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-deux" data-pourcentage="65"></div><span></span></div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="wrapper-tab">
+					<table>
+						<thead><tr><th colspan="2">Logiciels</th></tr></thead>
+						<tbody>
+							<tr>
+								<td>Illustrator</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-trois" data-pourcentage="30"></div><span></span></div></td>
+							</tr>
+							<tr>
+								<td>Photoshop</td>
+								<td><div class="barre-ext"><div class="barre-int barre-tab-trois" data-pourcentage="50"></div><span></span></div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="conteneur-flex">
+				<div class="wrapper-boite">
+				<div class="boite">
+					<div><img src="images/chat.png"/></div>
+					<ul>
+						<li>Français : Expert</li>
+						<li>Anglais : Intermédiaire</li>
 					</ul>
-				</td>
-			</tr>
-		</table>
+				</div>
+				</div>
+				<div class="wrapper-boite">
+					<div class="boite">
+						<div><img src="images/idea4.png"/></div>
+						<ul>
+							<li>Esprit de synthèse</li>
+							<li>Communication</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrapper-boite">
+					<div class="boite">
+						<div><img src="images/tools3.png"/></div>
+						<ul>
+							<li>Git</li>
+							<li>Méthodologie Agile</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/gars-cell.jpg"></div>
+		<section id="realisations">
+			<div class="conteneur">
+				<h3>Réalisations</h3>
+				<div class="conteneur-flex"></div>
+				<div id="tous-modals">
+				</div>
+			</div>
+		</section>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/robot2.jpg">
+			<div class="btn-contact"><a href="mailto:mariejoheck@gmail.com">Me contacter</a></div>
+		</div>
 	</main>
-</div>
+	<footer>
+		<span class="symbole">&lt;</span> copyright 2019 - Marie-Josée Heck  <span class="symbole">&sol;&gt;</span>
+	</footer>
 </body>
 </html>

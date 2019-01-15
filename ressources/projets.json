@@ -1,0 +1,65 @@
+{ 
+    "projets": [
+
+        {
+            "titre": "Sofa Crown", 
+            "sousTitre":"Thème Opencart",
+            "desc":"Réalisation d'un thème complet pour le CMS Opencart (MVC) à partir d'une maquette et conception d'extensions, notamment pour sécuriser les mots de passe",
+            "thumbnail":"thumbnail-sofa.jpg",
+            "imgPages":["sofa-1.png","sofa-2.jpg","sofa-3.jpg","sofa-4.jpg", "sofa-5.jpg"],
+            "lienSite":0,
+            "outils":["CSS", "Bootstrap", "Twig", "XML", "PHP", "htaccess" ]
+        },
+
+        {
+            "titre": "Immo 800", 
+            "sousTitre":"Thème Wordpress pour une agence immobilière",
+            "desc":"Réalisation d'un thème destiné à une agence immobilière pour le CMS Wordpress, d'une extension permettant de gérer les inscriptions aux visites et création de filtres de recherches",
+            "thumbnail":"thumbnail-immo.jpg",
+            "imgPages":["immo-6.png","immo-1.jpg","immo-2.jpg", "immo-3.jpg", "immo-4.jpg"],
+            "lienSite":0,
+            "outils":["CSS","PHP", "MySQL"]
+        },
+
+        {
+            "titre": "Jeu de puzzle", 
+            "sousTitre":"",
+            "desc":"Réalisation d'un jeu de type \"sliding puzzle\" en Javascript, utilisant le stockage local pour comptabiliser les scores",
+            "thumbnail":"thumbnail-puzzle.jpg",
+            "imgPages":["jeu-1.png"],
+            "lienSite":"jeu-tuiles/index.html",
+            "outils":["Javascript", "HTML","CSS"]
+        },
+
+        {
+            "titre": "Carte animée", 
+            "sousTitre":"Carte d'anniversaire animée",
+            "desc":"Conception et animation d'une carte animée",
+            "thumbnail":"thumbnail-carte2.jpg",
+            "imgPages":["carte-3.jpg", "carte-2.jpg"],
+            "lienSite":"animation_bonne-fete/index.html",
+            "outils":["Adobe Animate","Javascript"]
+        },
+
+        {
+            "titre": "Cubique", 
+            "sousTitre":"Galerie d'art virtuelle",
+            "desc":"Élaboration de l'image de marque d'une entreprise fictive et création de trois pages statiques, adaptées aux mobiles, représentatives de son site web.",
+            "thumbnail":"thumbnail-cubique.jpg",
+            "imgPages":["cubique-1.png", "cubique-2.jpg", "cubique-3.jpg"],
+            "lienSite":"adaptatif_galerie-cubique/index.html",
+            "outils":["HTML","CSS", "Flexbox", "Photohop", "Illustrator"]
+        },
+
+        {
+            "titre": "HOMA",
+            "sousTitre":"École de danse contemporaine",
+            "desc":"Conception du logo, d'un moodboard et d'une landing page pour une école de danse fictive.",
+            "thumbnail":"thumbnail-homa.jpg",
+            "imgPages":["homa-1.jpg","homa-2.jpg", "homa-3.png"],
+            "lienSite":0,
+            "outils":["HTML","CSS","Photohop", "Illustrator"]
+        }
+     ] 
+  }
+  
