@@ -4,25 +4,95 @@
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    h1{
+        font-size:3rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+}
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    h1{
+        font-size:4rem;
+    }
+
+    h2{
+        font-size:3rem;
+    }
+}
 /*  Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+      
+    #presentation,
+    #competences,
+    #realisations{
+        min-height:100vh;
+    }
+
+    #competences .conteneur-flex{
+        flex-wrap: nowrap;
+    }
+    h3{
+        margin-bottom:100px;
+    }
+    .conteneur-tab{
+        margin-bottom:50px;
+    }
+
+}
 
 /*----------------------------------------------------------
 --------- Extra large to Small devices BREAKPOINTS ---------
 ----------------------------------------------------------*/
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    h1{
+        font-size:2rem;
+    }
+    h2{
+        font-size:1.7rem;
+    }
+    h3{
+        font-size:1.9rem;
+    }
+    .barre-ext{
+        width: 150px;
+    }
+}
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+
+    blockquote::before{
+        background-size: 0px 0px;
+    }
+
+    blockquote{
+        margin:0;
+        line-height: 1.7rem;
+    }
+}
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+
+}
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    h3{
+        margin-bottom:50px;
+    }
+    #competences .conteneur-flex{
+        flex-wrap: wrap;
+    }
+    #competences.conteneur{
+        max-width:600px;
+    }
+}
 /* Extra large devices (large desktops) */
 /* No media query since the extra-large breakpoint has no upper bound on its width */
 
@@ -50,26 +120,10 @@
 
 }
 @media (min-width: 992px) {
-    .addtoany_share_save_container, 
-    .addtoany_content,
-    .addtoany_content_bottom{
-        display:none;
-    }
+
 }
 @media (min-width: 1200px) {
-    /* menu footer */
 
-    #footer nav ul{
-        max-width: 1200px;
-        margin:0 auto;
-    }
-    #footer nav li{
-        border-right:1px solid #fff;
-    }
-    
-    #footer nav li:last-child{
-        border-right:none;
-    }
 }
 /* Extra large to Small devices BREAKPOINTS*/
 @media (max-width: 575.98px) {
@@ -86,17 +140,9 @@
 }
 
 @media (max-width: 991.98px) {
-    .search{
-        margin-top:1rem;
-    }
-    /*header #search-results{
-        margin-top: 90px;
-    }
-    header form.search{
-        margin-top: 90px;
-        width: 100%;
-    }*/
+
 }
+
 /* Device specific BREAKPOINTS */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
@@ -109,35 +155,4 @@
 }
 @media (min-width: 1200px) {
 
-}
-
-/* Exceptions */
-@media (min-width: 992px) and (max-width: 1660px){
-    /*header form.search{
-        width: 45%;
-        margin: auto;
-    }*/
-}
-
-@media (max-width:1500px){
-	.newsletter-wrapper{
-		display:none;
-	}
-}
-
-/* menu responsive */
-@media (max-height: 749px) and (max-width: 991px){
-    /*header button.menu-link {
-        position: absolute;
-        left: 25px;
-        top: 25px;
-    }*/
-}
-
-@media (max-height: 749px) and (max-width: 991px){
-    body.js header nav[role=navigation].active{
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
 }

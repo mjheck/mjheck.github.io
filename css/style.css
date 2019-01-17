@@ -18,7 +18,9 @@ html, body, button, div, section, article, aside, header, hgroup, footer, nav, h
 * {
 	box-sizing: border-box;
   }
-
+  html {
+	scroll-behavior: smooth;
+  }
 a{
 	white-space:nowrap;
 	text-decoration:none;
@@ -33,7 +35,6 @@ body{
 
 h1{
 	white-space: nowrap;
-	font-size:4rem;
 	color:white;
 	margin-bottom:20px;
 	font-family: 'Raleway', sans-serif; 
@@ -49,7 +50,6 @@ h2{
 h3{
 	text-align: center;
 	font-size:3rem;
-	margin-bottom:100px;
 	letter-spacing: .8rem;
 	font-family: 'Raleway', sans-serif; 
 }
@@ -58,6 +58,7 @@ h4{
 	font-size:2.5rem;
 	color:#d87c7c;
 	padding:5px 0px;
+	font-family: 'Raleway', sans-serif;
 }
 
 h5{
@@ -66,6 +67,7 @@ h5{
 	font-weight: 500;
 	border-bottom:1px solid #dbdbdb;
 	padding-bottom:10px;
+	font-family: 'Raleway', sans-serif;
 }
 
 h5 + p{
@@ -98,23 +100,10 @@ p{
 .conteneur-flex{
 	margin:0 auto;
 	display: flex;
-	flex-wrap: wrap;
-	margin-bottom:50px;
-	margin-top: 20px;
-}
-
-.wrapper-tab,
-.wrapper-boite{
-	width:400px;
 }
 
 .wrapper-thumbnail{
 	width:380px;
-}
-
-#realisations{
-	background-color: #202020;
-	color:white;
 }
 
 /* Barre de navigation */
@@ -217,18 +206,29 @@ blockquote ~ div{
 	text-align: center;
 }
 
-/* parallax */
-.parallax-window {
-	position:relative;
-    min-height: 80vh;
-    background: transparent;
+#presentation,
+#competences,
+#realisations {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-/* section competences */
+/* parallax */
+.parallax-window {
+    min-height: 80vh;
+}
 
+/* Section competences */
 #competences .conteneur-flex{
+	width:100%;
+	display:flex;
 	align-items: flex-start;
 	justify-content: center;
+}
+
+#competences .conteneur-tab{
+	margin-bottom:50px;
 }
 
 #competences img{
@@ -236,15 +236,23 @@ blockquote ~ div{
 	width:80px;
 }
 
+#competences .wrapper-tab{
+	max-width:400px;
+	width:100%;
+	margin:10px;
+}
+
 #competences table{
-	width:95%;
-	margin:0 auto;
+	width:100%;
 }
 
 #competences td{
-	width:50%;
 	vertical-align:middle;
 	padding:10px 0;
+}
+
+.matiere{
+	width:40%;
 }
 
 #competences tr td:first-child{
@@ -297,7 +305,8 @@ blockquote ~ div{
 
 /* boites info */
 .boite{
-	width:95%;
+	max-width:400px;
+	width:100%;
 	font-weight: 500;
 	color:#414141;
 	margin:10px;
@@ -321,12 +330,19 @@ blockquote ~ div{
 
 
 /* Section réalisations */
+
+#realisations{
+	background-color: #202020;
+	color:white;
+}
+
 #realisations .conteneur{
 	max-width:1160px;
 }
 
 #realisations .conteneur-flex{
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 /* Thumbnails projets*/
@@ -457,7 +473,12 @@ blockquote ~ div{
 	padding:5px 10px;
 	border:2px solid #202020;
 }
-/* section contact bas */
+/* section contact */
+
+#contact .parallax-window{
+	position:relative;
+}
+
 .btn-contact{
 	font-size:2rem;
 	color:white;

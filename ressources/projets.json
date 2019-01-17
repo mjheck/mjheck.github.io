@@ -18,7 +18,7 @@
             "thumbnail":"thumbnail-immo.jpg",
             "imgPages":["immo-6.png","immo-1.jpg","immo-2.jpg", "immo-3.jpg", "immo-4.jpg"],
             "lienSite":0,
-            "outils":["CSS","PHP", "MySQL"]
+            "outils":["CSS","Flexbox", "PHP", "MySQL"]
         },
 
         {
@@ -60,6 +60,6 @@
             "lienSite":0,
             "outils":["HTML","CSS","Photohop", "Illustrator"]
         }
-     ] 
-  }
+    ] 
+}
   

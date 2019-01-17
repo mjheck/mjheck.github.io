@@ -33,7 +33,7 @@ $('document').ready(function () {
     
     for(var i=0; i < tousSpans.length; i++){
         longueur = parseInt(toutesBarres[i].getAttribute("data-pourcentage"));
-        tousSpans[i].style.width = longueur + 20 + "%";
+        tousSpans[i].style.width = longueur + 25 + "%";
         tousSpans[i].innerHTML = longueur + "%";
     }
 
