@@ -80,7 +80,11 @@
 @media (max-width: 767.98px) {
 
     blockquote::before{
-        background-size: 0px 0px;
+        display:none;
+    }
+
+    blockquote::after{
+        display:none;
     }
 
     blockquote{
