@@ -102,10 +102,6 @@ p{
 	display: flex;
 }
 
-.wrapper-thumbnail{
-	width:380px;
-}
-
 /* Barre de navigation */
 nav{
 	padding:5px 10px;
@@ -336,21 +332,23 @@ blockquote ~ div{
 	color:white;
 }
 
-#realisations .conteneur{
-	max-width:1160px;
-}
-
 #realisations .conteneur-flex{
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
 /* Thumbnails projets*/
+
+.wrapper-thumbnail{
+	max-width:360px;
+	width:100%;
+	margin:5px;
+}
+
 .thumbnail {
 	position: relative;
 	width: 100%;
 	cursor: pointer;
-	padding:5px;
 }
 
 .dessus {

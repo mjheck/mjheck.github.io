@@ -11,9 +11,13 @@
     h2{
         font-size:2rem;
     }
+    .modal-content{
+        width: 80%;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
 
 }
 /* Large devices (desktops, 992px and up) */
@@ -45,6 +49,10 @@
         margin-bottom:50px;
     }
 
+    .modal-content{
+        width: 50%;
+    }
+
 }
 
 /*----------------------------------------------------------
@@ -63,6 +71,9 @@
     }
     .barre-ext{
         width: 150px;
+    }
+    .modal-content{
+        width: 100%;
     }
 }
 /* Small devices (landscape phones, less than 768px) */
