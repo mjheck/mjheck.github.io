@@ -1,6 +1,5 @@
 $('document').ready(function () {
-   
-
+    ScrollReveal().reveal('.titre-fond',{ duration: 2000 })
     // afficher les projets à partir du fichier projets.json
     $.getJSON('ressources/projets.json', function(resultat) {
         var projets = resultat.projets;
