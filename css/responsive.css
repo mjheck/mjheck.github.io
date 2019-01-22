@@ -19,6 +19,16 @@
 @media (min-width: 768px) {
 
 
+    .titre-fond{
+        font-size:5rem;
+    }
+    .fond-fixe .mobile{
+        display:none;
+    }
+    .fond-fixe .desktop{
+        display:block;
+    }
+
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -28,6 +38,12 @@
 
     h2{
         font-size:3rem;
+    }
+
+
+
+    .titre-fond{
+        font-size:7rem;
     }
 }
 /*  Extra large devices (large desktops, 1200px and up) */
@@ -42,6 +58,11 @@
     #competences .conteneur-flex{
         flex-wrap: nowrap;
     }
+
+    .titre-fond{
+        font-size:8rem;
+    }
+
     h3{
         margin-bottom:100px;
     }
@@ -52,8 +73,24 @@
     .modal-content{
         width: 50%;
     }
-
 }
+
+/*  Extra + large devices (large desktops, 1440px and up) */
+@media (min-width: 1440px){
+    
+    .titre-fond{
+        font-size:12rem;
+    }
+
+    h1{
+        font-size:5rem;
+    }
+
+    h2{
+        font-size:4rem;
+    }
+}
+
 
 /*----------------------------------------------------------
 --------- Extra large to Small devices BREAKPOINTS ---------
@@ -90,6 +127,16 @@
     blockquote{
         margin:0;
         line-height: 1.7rem;
+    }
+
+    .titre-fond{
+        font-size:8rem;
+    }
+    .fond-fixe .mobile{
+        display:block;
+    }
+    .fond-fixe .desktop{
+        display:none;
     }
 }
 /* Medium devices (tablets, less than 992px) */

@@ -15,6 +15,7 @@
 	<script src="js/parallax.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>Marie-Josée Heck</title>
 </head>
 <body>
@@ -28,10 +29,11 @@
 	</nav>
 
 	<header>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/caracteres7.jpg">
+		<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="images/caracteres7.jpg"> -->
+		<div class="fond-fixe" style="background-image: url('images/caracteres7.jpg');">
 			<div class="titre">
-				<h1>Marie-Josée Heck</h1>
-				<h2>Développeuse Web</h2>
+				<h1 class="ml16">Marie-Josée Heck</h1>
+				<h2 class="ml16">Développeuse Web</h2>
 			</div>
 		</div>
 	</header>
@@ -49,10 +51,13 @@
 			</div>
 		</section>
 		
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/ordi.jpg"></div>
-		
+		<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="images/ordi.jpg"></div> -->
+		<div class="fond-fixe" style="background-image: url('images/ordi.jpg');">
+			<div class="titre-fond desktop">Compétences</div>
+			<div class="titre-fond mobile"><p>Com</p><p>pé</p><p>ten</p><p>ces</p></div>
+		</div>
+
 		<section id="competences" class="conteneur">
-			<h3>Compétences</h3>
 			<div class="conteneur-flex conteneur-tab">
 				<div class="wrapper-tab">
 					<table>
@@ -140,23 +145,27 @@
 					</div>
 			</div>
 		</section>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/gars-cell.jpg"></div>
+		<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="images/gars-cell.jpg"></div> -->
+		<div class="fond-fixe" style="background-image: url('images/realisations.jpg');">
+			<div class="titre-fond desktop">Réalisations</div>
+			<div class="titre-fond mobile"><p>Réa</p><p>lis</p><p>ati</p><p>ons</p></div>
+		</div>
 		<section id="realisations">
 			<div class="conteneur">
-				<h3>Réalisations</h3>
 				<div class="conteneur-flex"></div>
 				<div id="tous-modals">
 				</div>
 			</div>
 		</section>
 		<section id="contact">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="images/robot2.jpg">
+			<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="images/robot2.jpg"> -->
+			<div class="fond-fixe" style="background-image: url('images/robot2.jpg');">
 				<div class="btn-contact"><a href="mailto:mariejoheck@gmail.com">Me contacter</a></div>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<span class="symbole">&lt;</span> copyright 2019 - Marie-Josée Heck  <span class="symbole">&sol;&gt;</span>
+		copyright 2019 - Marie-Josée Heck
 	</footer>
 </body>
 </html>

@@ -54,6 +54,34 @@ $('document').ready(function () {
             spans[i].style.opacity=0;
         }
     });
+
+    //Animation apparition titre 
+    $('.ml16').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w|-)/g, "<span class='letter'>$&</span>"));
+      });
+      
+      anime.timeline()
+        .add({
+          targets: '.ml16 .letter',
+          translateX: [40,0],
+          translateZ: 0,
+          opacity: [0,1],
+          easing: "easeOutExpo",
+          duration: 2000,
+          delay: function(el, i) {
+            return 500 + 30 * i;
+          }
+        });
+    
+        $(window).scroll(function(){   
+            console.log($(this).scrollTop());
+                   
+            if ($(this).scrollTop() > 300) {
+                $('nav').fadeIn(1000);
+            } else {
+                $('nav').fadeOut(1000);
+            }
+        });
 });
 
 /**
