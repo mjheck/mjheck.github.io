@@ -37,12 +37,14 @@ h1{
 	white-space: nowrap;
 	color:white;
 	margin-bottom:20px;
+	font-weight:300;
 	font-family: 'Raleway', sans-serif; 
 }
 
 h2{
 	white-space: nowrap;
 	font-size:3rem;
+	font-weight: 300;
 	color:#d87c7c;
 	font-family: 'Raleway', sans-serif; 
 }
@@ -172,6 +174,10 @@ transform: scaleX(1);
 	transform: translate(-50%, -50%);
 }
 
+header .fond-fixe{
+	background-color: #202020;
+}
+
 /* Bloc de citation */
 blockquote{
 	position:relative;
@@ -252,10 +258,10 @@ blockquote ~ div{
 	  transform: translateY(0);
 	}
 	40% {
-	  transform: translateY(-30px);
+	  transform: translateY(-10px);
 	}
 	60% {
-	  transform: translateY(-15px);
+	  transform: translateY(-3px);
 	}
   }
 
@@ -280,6 +286,7 @@ blockquote ~ div{
 	max-width:400px;
 	width:100%;
 	margin:10px;
+	position: relative;
 }
 
 #competences table{
@@ -388,14 +395,12 @@ blockquote ~ div{
 	max-width:360px;
 	width:100%;
 	margin:5px;
-	border-radius:50%;
 }
 
 .thumbnail {
 	position: relative;
 	width: 100%;
 	cursor: pointer;
-
 }
 
 .dessus {

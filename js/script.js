@@ -1,5 +1,5 @@
 $('document').ready(function () {
-    ScrollReveal().reveal('.titre-fond',{ duration: 2000 })
+ScrollReveal().reveal('.titre-fond',{ duration: 2000 })
     // afficher les projets à partir du fichier projets.json
     $.getJSON('ressources/projets.json', function(resultat) {
         var projets = resultat.projets;
@@ -73,8 +73,6 @@ $('document').ready(function () {
         });
     
         $(window).scroll(function(){   
-            console.log($(this).scrollTop());
-                   
             if ($(this).scrollTop() > 300) {
                 $('nav').fadeIn(1000);
             } else {

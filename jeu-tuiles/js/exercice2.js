@@ -26,10 +26,10 @@ window.addEventListener("load", function() {
         [1,2,3,4],
         [5,6,7,8,],
         [9,10,11,12,],
-        [13,14,15,""]];
+        [13,14,"",15]];
     
     //Mélanger le jeu
-   matrice = shuffle(matrice);
+   // matrice = shuffle(matrice);
 
     /**
      * Dessine la matrice de jeu et ajoute les évévements de déplacement sur les
